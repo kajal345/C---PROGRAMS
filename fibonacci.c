@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() 
+{
+  int no, i = 0, j = 1;
+  printf("\n Enter the number = ");
+  scanf("%d",&no);
+  printf(" %d %d", i, j);
+  while (no > 0) 
+  {
+    printf(" %d", i + j);
+    j = i + j;
+    i = j - i;
+    no--;
+  }
+  return 0;
+}
